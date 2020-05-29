@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 // The main function is the starting point for all our Flutter apps.
@@ -7,11 +8,13 @@ void main() {
       home: Scaffold(
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
-          title: Text('I am Rich'),
+          title: Center(child: Text('I am Rich')),
           backgroundColor: Colors.blueGrey[900],
         ),
-        body: Image(
-          image: NetworkImage('https://images-na.ssl-images-amazon.com/images/I/91F15VTNFFL.jpg'),
+        body: Center(
+          child: Image(
+            image: AssetImage('images/diamond.png'),
+          ),
         ),
       ),
     ),
